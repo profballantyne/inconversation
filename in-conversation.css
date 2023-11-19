@@ -1,0 +1,838 @@
+/*----------------------------
+// [00.01] File Paths
+// Defining the base paths for assets and resource utilities.
+//----------------------------*/
+/*----------------------------
+// [00.02] Theme Colors
+// Core colors defining the theme's aesthetic.
+//----------------------------*/
+/*----------------------------
+// [00.04] Mixins
+// Reusable code snippets for repetitive tasks.
+//----------------------------*/
+/*----------------------------
+// [00.05] Breakpoints
+// Media query breakpoints for responsive design. 
+//----------------------------*/
+/*----------------------------
+// [00.03] Fonts
+// Overall font configurations and base typography settings.
+//----------------------------*/
+/*----------------------------
+// [00.02.01] Font Faces
+// Import declarations for custom fonts.
+//----------------------------*/
+/*----------------------------
+// [00.02.02] Font Weights
+// Definition of font weights.
+//----------------------------*/
+.bold-text, b, strong {
+  font-weight: 700;
+}
+
+/*----------------------------
+// [00.06.01] Containers
+// Holds content within layout boundaries
+//----------------------------*/
+.pop-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 16px;
+  width: 100%;
+  position: relative;
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+}
+@media (min-width: 576px) {
+  .pop-container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  .pop-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .pop-container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1170px) {
+  .pop-container {
+    max-width: 1170px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.seneca-main-figure {
+  margin-top: -20px;
+}
+
+.seneca-figure {
+  margin-bottom: 16px;
+}
+
+.seneca-figcaption {
+  font-style: normal;
+  font-size: 12px;
+  margin-bottom: 16px;
+  padding-top: 8px;
+}
+
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #da291c;
+  text-decoration: underline;
+  font-weight: 400;
+}
+a:hover {
+  color: #ad2116;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/*----------------------------
+// [00.05] LibGuides
+// Media query breakpoints for responsive design. 
+//----------------------------*/
+.s-lg-guide-body {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#s-lib-admin-bc .breadcrumb, #s-lib-bc .breadcrumb {
+  font-family: "Open Sans", "Arial", sans-serif;
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+#s-lg-guide-header-search {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+#s-lib-footer-public .pad-left-med {
+  margin-left: 15px !important;
+}
+
+.s-lib-box {
+  border-top: 1px solid #B3B3B3;
+}
+
+.s-lib-box-title {
+  font-family: "Minion Pro", "Georgia", serif !important;
+  font-weight: 400 !important;
+  line-height: 1.2em;
+  padding: 0 !important;
+  font-size: 24px !important;
+  line-height: 1.2em !important;
+  display: inline-block;
+  border-top: 2px solid #da291c;
+  padding-top: 16px !important;
+}
+
+.s-lib-footer {
+  border-top: 1px solid #B3B3B3;
+  font-size: 0.9em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #ffffff;
+  font-size: 11px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.s-lib-box-content ul {
+  list-style-type: disc;
+  padding-left: 0;
+  margin-left: 20px;
+}
+
+.s-lg-blog-header {
+  font-family: "Minion Pro", "Georgia", serif;
+}
+
+#s-lg-tabs-container.container {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 0 16px 0 !important;
+  background-color: #da291c;
+  height: 60px;
+}
+
+#s-lg-guide-tabs .nav-tabs > li {
+  margin: 0 !important;
+}
+
+#s-lg-guide-tabs {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto !important;
+  font-size: 16px;
+}
+#s-lg-guide-tabs .nav-tabs {
+  width: 100%;
+  margin: 0 auto;
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+}
+@media (min-width: 576px) {
+  #s-lg-guide-tabs .nav-tabs {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #s-lg-guide-tabs .nav-tabs {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #s-lg-guide-tabs .nav-tabs {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1170px) {
+  #s-lg-guide-tabs .nav-tabs {
+    max-width: 1170px;
+  }
+}
+#s-lg-guide-tabs ul .nav-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#s-lg-guide-tabs ul .nav-tabs li {
+  margin-right: 1rem;
+}
+#s-lg-guide-tabs ul .nav-tabs li a {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400 !important;
+  font-size: 16px;
+  line-height: 60px;
+  text-decoration: none !important;
+}
+#s-lg-guide-tabs ul .nav-tabs li a:hover {
+  background-color: #eee;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+}
+#s-lg-guide-tabs ul .nav-tabs li a.active {
+  background-color: #e9e9e9;
+  font-weight: 400 !important;
+  border-color: #ddd;
+  text-decoration: none !important;
+  border-bottom-color: transparent;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a {
+  font-weight: 400 !important;
+  background-color: #da291c !important;
+  border: 0;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a:hover {
+  font-weight: 400 !important;
+  border: 0;
+  text-decoration: none;
+  background-color: #da291c !important;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a.s-lg-tab-top-link {
+  font-weight: 400 !important;
+  padding: 0 12px;
+  line-height: 60px;
+  border: 0;
+  background-color: #da291c !important;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a {
+  font-weight: 400 !important;
+  padding: 0 12px !important;
+  line-height: 60px;
+  border: 0;
+}
+
+.s-lg-rss-links {
+  display: none !important;
+}
+
+.s-lg-rss-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.conversation-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  gap: 16px;
+}
+.conversation-footer > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.conversation-footer > *:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 140px;
+}
+.conversation-footer > *:last-child {
+  text-align: right;
+}
+
+.__seneca-logo img {
+  max-width: 100%;
+  alt: "Seneca College Logo";
+}
+
+a, button, input, textarea, select {
+  color: #da291c;
+  text-decoration: underline;
+}
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+  outline: 3px solid #2291ff;
+  outline-offset: 2px;
+}
+a:hover, a:focus, button:hover, button:focus, input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  text-decoration: none;
+}
+
+.__copyright, .__privacy-link {
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.__social-links {
+  font-size: 32px;
+}
+.__social-links a {
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.nav-tabs > li > a {
+  margin: 0;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a:hover {
+  border: 0 !important;
+  font-weight: 400 !important;
+  background-color: #da291c !important;
+}
+
+.seneca-frontpage-lead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 480px;
+  overflow: hidden;
+}
+.seneca-frontpage-lead .seneca-frontpage-lead-responsive-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.seneca-frontpage-lead {
+  border: 1px solid #B3B3B3;
+  background-image: url(https://popjournalism.com/wp-content/themes/popsoundtrack-2023/assets/backgrounds/polygons.gif);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 480px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.seneca-frontpage-lead .seneca-frontpage-lead-responsive-image {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.seneca-frontpage-lead-title {
+  font-family: "Minion Pro", "Georgia", serif !important;
+  font-weight: 400 !important;
+  font-size: 40px;
+  line-height: 1.1em;
+  text-align: center;
+  margin-top: 16px;
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+}
+.seneca-frontpage-lead-title a {
+  text-decoration: none !important;
+}
+.seneca-frontpage-lead-title a:hover {
+  text-decoration: underline !important;
+}
+@media (min-width: 576px) {
+  .seneca-frontpage-lead-title {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1170px) {
+  .seneca-frontpage-lead-title {
+    font-size: 48px;
+  }
+}
+
+.seneca-frontpage-lead-description {
+  text-align: center !important;
+}
+
+.seneca-frontpage-lead-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.seneca-frontpage-lead-cta a {
+  display: inline-block;
+  background-color: #da291c;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.seneca-frontpage-lead-cta a:hover {
+  background-color: #ad2116;
+  color: #ffffff;
+  text-decoration: none;
+}
+.seneca-frontpage-lead-cta a:active {
+  background-color: #ad2116;
+  color: #ffffff;
+}
+
+.seneca-container-mobile {
+  border: 1px solid #B3B3B3;
+  display: -ms-grid;
+  display: grid;
+  gap: 0px;
+  margin: 0 auto;
+  padding: 0 16px 32px 16px;
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  margin-top: -88px;
+  margin-bottom: 32px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+}
+@media (min-width: 576px) {
+  .seneca-container-mobile {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  .seneca-container-mobile {
+    max-width: 576px;
+  }
+}
+@media (min-width: 992px) {
+  .seneca-container-mobile {
+    max-width: 576px;
+  }
+}
+@media (min-width: 1170px) {
+  .seneca-container-mobile {
+    max-width: 576px;
+  }
+}
+.seneca-container-mobile .seneca-frontpage-rubric {
+  font-family: "Minion Pro", "Georgia", serif !important;
+  font-weight: 400 !important;
+  line-height: 1.2em;
+  padding: 0 !important;
+  font-size: 24px !important;
+  line-height: 1.2em !important;
+  display: inline-block;
+  border-top: 2px solid #da291c;
+  padding-top: 16px !important;
+  margin: 0 auto;
+}
+
+#s-lg-guide-header-search {
+  display: none !important;
+}
+
+#s-lib-bc-page {
+  display: none !important;
+}
+
+#s-lib-bc-guide {
+  display: none !important;
+}
+
+#s-lg-guide-header-search {
+  margin-top: -32px;
+}
+
+#s-lib-bc, #s-lg-guide-header-info, #s-lg-guide-desc-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 0;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  position: relative;
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+}
+@media (min-width: 576px) {
+  #s-lib-bc, #s-lg-guide-header-info, #s-lg-guide-desc-container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #s-lib-bc, #s-lg-guide-header-info, #s-lg-guide-desc-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #s-lib-bc, #s-lg-guide-header-info, #s-lg-guide-desc-container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1170px) {
+  #s-lib-bc, #s-lg-guide-header-info, #s-lg-guide-desc-container {
+    max-width: 1170px;
+  }
+}
+
+#s-lg-guide-header-info #s-lg-guide-name {
+  display: inline-block;
+  width: 340px;
+  height: 72px;
+  background: url("https://popjournalism.com/wp-content/uploads/in-conversation-with-prof-ballantyne.png") no-repeat;
+  background-size: contain;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+  /* Limit the maximum width for better readability */
+}
+@media (min-width: 576px) {
+  #s-lg-guide-header-info #s-lg-guide-name {
+    width: 563px;
+    height: 120px;
+  }
+}
+@media (min-width: 768px) {
+  #s-lg-guide-header-info #s-lg-guide-name {
+    width: 563px;
+    height: 120px;
+  }
+}
+@media (min-width: 992px) {
+  #s-lg-guide-header-info #s-lg-guide-name {
+    width: 563px;
+    height: 120px;
+  }
+}
+@media (min-width: 1170px) {
+  #s-lg-guide-header-info #s-lg-guide-name {
+    width: 563px;
+    height: 120px;
+  }
+}
+
+#s-lg-guide-header.container {
+  width: 100% !important;
+}
+
+#s-lg-guide-header {
+  background-image: url("https://popjournalism.com/wp-content/themes/popsoundtrack-2023/assets/backgrounds/halftone.gif");
+  background-position: bottom center;
+}
+
+#s-lg-guide-header-info {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: auto 95%;
+  background-position: bottom right;
+  padding: 24px 16px;
+}
+@media (min-width: 576px) {
+  #s-lg-guide-header-info {
+    background-image: url("https://popjournalism.com/wp-content/uploads/prof-ballantyne-seneca-polytechnic.png");
+  }
+}
+
+#s-lg-guide-desc-container {
+  font-family: "Minion Pro", "Georgia", serif;
+  margin-left: -16px;
+  padding-top: 8px;
+  display: none;
+  line-height: 1.3em;
+}
+
+.seneca-frontpage-links {
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+  padding-bottom: 24px;
+  width: 100%;
+  -ms-grid-columns: 1fr 16px 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 576px) {
+  .seneca-frontpage-links {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.seneca-frontpage-links .__somm, .seneca-frontpage-links .__libraries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.seneca-frontpage-links .__somm {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.seneca-frontpage-links .__somm img {
+  width: 300px;
+  height: auto;
+}
+@media (max-width: 576px) {
+  .seneca-frontpage-links .__somm img {
+    width: 200px;
+  }
+}
+.seneca-frontpage-links .__libraries {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.seneca-frontpage-links .__libraries img {
+  width: 332px;
+  height: auto;
+  padding-right: 32px;
+}
+@media (max-width: 576px) {
+  .seneca-frontpage-links .__libraries img {
+    width: 232px;
+  }
+}
+.seneca-frontpage-links .__button a {
+  border: 1px solid #B3B3B3;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ffffff !important;
+  color: #da291c !important;
+  text-decoration: none !important;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 14px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.seneca-frontpage-links .__button a:hover {
+  background-color: #ad2116 !important;
+  color: #ffffff !important;
+}
+
+#s-lib-bc {
+  display: none !important;
+}
+
+.s-lg-col-boxes {
+  /* Limit the maximum width for better readability */
+}
+@media (max-width: 576px) {
+  .s-lg-col-boxes {
+    padding: 0 !important;
+  }
+}
+
+#s-lg-tabs-container .nav-tabs > li > a.s-lg-tab-drop {
+  display: none !important;
+}
+
+.s-lg-tab-top-link, #s-lg-tabs-container .nav-tabs > li > a {
+  text-decoration: none !important;
+}
+
+.dropdown-menu {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Open Sans", "Arial", sans-serif !important;
+}
+.dropdown-menu li a {
+  padding: 16px;
+  background-color: #ad2116;
+  color: #ffffff;
+  text-decoration: none !important;
+  border-top: 1px solid #B3B3B3;
+  font-size: 16px !important;
+}
+.dropdown-menu li a:hover {
+  text-decoration: underline !important;
+}
+
+.row {
+  /* Limit the maximum width for better readability */
+}
+@media (max-width: 576px) {
+  .row {
+    margin: 0 !important;
+  }
+}
+
+.s-lg-blog-header {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.s-lg-blog-header a {
+  color: #da291c;
+  text-decoration: none !important;
+}
+.s-lg-blog-header a:hover {
+  color: #ad2116;
+  text-decoration: underline;
+}
+
+.s-lg-blog-header + span,
+.s-lg-blog-header + span + a,
+.post-reply,
+#comments {
+  display: none !important;
+}
+
+.s-lg-blog-header + span .moment-date-header {
+  display: inline !important;
+}
+
+.s-lg-blog-recent-posts {
+  font-size: 14px;
+}
+
+.s-lg-link-weight-contrast {
+  margin-left: 0 !important;
+  text-indent: 0 !important;
+  font-size: 16px;
+}
