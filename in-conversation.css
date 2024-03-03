@@ -413,7 +413,7 @@ a:hover, a:focus, button:hover, button:focus, input:hover, input:focus, textarea
 
 .seneca-frontpage-lead {
   border: 1px solid #B3B3B3;
-  background-image: url(https://popjournalism.com/wp-content/themes/popsoundtrack-2023/assets/backgrounds/polygons.gif);
+  background-image: url(https://popjournalism.com/wp-content/themes/popsoundtrack-2023/assets/backgrounds/polygon-background.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,7 +658,7 @@ a:hover, a:focus, button:hover, button:focus, input:hover, input:focus, textarea
 }
 
 #s-lg-guide-header {
-  background-image: url("https://popjournalism.com/wp-content/themes/popsoundtrack-2023/assets/backgrounds/halftone.gif");
+  background-image: url("https://popjournalism.com/wp-content/themes/popsoundtrack-2023/assets/backgrounds/seamless-polygons.gif");
   background-position: bottom center;
 }
 
